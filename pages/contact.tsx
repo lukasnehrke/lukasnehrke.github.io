@@ -21,7 +21,7 @@ export default function Contact() {
             <EnvelopeIcon className="h-5 w-5" />
             <span className="ml-2 truncate">lukasnehrke@protonmail.com</span>
           </li>
-          <li>
+          <li className="flex items-center">
             <a className="flex items-center" href="https://github.com/lukasnehrke" rel="noopener noreferrer">
               <GitHubIcon className="h-5 w-5" />
               <span className="ml-2 truncate">@lukasnehrke</span>
@@ -31,7 +31,7 @@ export default function Contact() {
             <UrbitIcon className="h-5 w-5" />
             <span className="ml-2 truncate">~ritsyx-nosfus</span>
           </li>
-          <li>
+          <li className="flex items-center">
             <a className="flex items-center" href="#">
               <KeyIcon className="h-5 w-5" />
               <span className="ml-2 truncate">View GPG Key</span>
