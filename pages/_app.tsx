@@ -22,8 +22,7 @@ export default function App({ Component, pageProps }: AppProps) {
             <Link href="/">&lt;lukasnehrke /&gt;</Link>
           </h1>
           <nav className="flex space-x-2 overflow-hidden py-3 text-sm text-indigo-600">
-            <Link href="#">Projects</Link>
-            <Link href="#">Gallery</Link>
+            <Link href="/projects">Projects</Link>
             <Link href="/contact">Contact</Link>
           </nav>
         </header>
