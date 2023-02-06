@@ -7,7 +7,7 @@ export default function Contact() {
   return (
     <>
       <Head>
-        <title>#contact - lukasnehrke</title>
+        <title>#contact - @lukasnehrke.dev</title>
       </Head>
       <main className="mx-auto flex px-4 pt-6 md:max-w-4xl md:pt-8">
         <ul className="relative columns-1 gap-8 space-y-2 text-sm sm:columns-2 md:columns-3">

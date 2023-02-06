@@ -19,7 +19,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <div className={`${inter.variable} font-sans`}>
         <header className="mx-auto flex max-w-4xl flex-wrap items-center justify-between px-4 pt-6 md:pt-8">
           <h1 className="mr-8 overflow-hidden whitespace-nowrap font-semibold">
-            <Link href="/">[ lukasnehrke ]</Link>
+            <Link href="/">&lt;lukasnehrke /&gt;</Link>
           </h1>
           <nav className="flex space-x-2 overflow-hidden py-3 text-sm text-indigo-600">
             <Link href="#">Projects</Link>
