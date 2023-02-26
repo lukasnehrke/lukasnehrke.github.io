@@ -1,22 +1,22 @@
-import type { AppProps } from "next/app";
-import Link from "next/link";
 import { Inter } from "next/font/google";
+import React from "react";
+import Link from "next/link";
 import "../styles/globals.css";
-import Head from "next/head";
 
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
+  display: "swap",
 });
 
-export default function App({ Component, pageProps }: AppProps) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <>
-      <Head>
+    <html lang="en" className={inter.className}>
+      <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <div className={`${inter.variable} font-sans`}>
+      </head>
+      <body>
         <header className="mx-auto flex max-w-4xl flex-wrap items-center justify-between px-4 pt-6 md:pt-8">
           <h1 className="mr-8 overflow-hidden whitespace-nowrap font-semibold">
             <Link href="/">&lt;lukasnehrke /&gt;</Link>
@@ -26,8 +26,8 @@ export default function App({ Component, pageProps }: AppProps) {
             <Link href="/contact">Contact</Link>
           </nav>
         </header>
-        <Component {...pageProps} />
-      </div>
-    </>
+        {children}
+      </body>
+    </html>
   );
 }
