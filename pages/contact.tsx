@@ -18,8 +18,10 @@ export default function Contact() {
             </a>
           </li>
           <li className="flex items-center">
-            <EnvelopeIcon className="h-5 w-5" />
-            <span className="ml-2 truncate">lukasnehrke@protonmail.com</span>
+            <a className="flex items-center" href="mailto:lukasnehrke@protonmail.com">
+              <EnvelopeIcon className="h-5 w-5" />
+              <span className="ml-2 truncate">lukasnehrke@protonmail.com</span>
+            </a>
           </li>
           <li className="flex items-center">
             <a className="flex items-center" href="https://github.com/lukasnehrke" rel="noopener noreferrer">
