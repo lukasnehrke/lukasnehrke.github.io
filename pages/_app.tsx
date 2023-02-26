@@ -1,6 +1,6 @@
 import type { AppProps } from "next/app";
 import Link from "next/link";
-import { Inter } from "@next/font/google";
+import { Inter } from "next/font/google";
 import "../styles/globals.css";
 import Head from "next/head";
 
