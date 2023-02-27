@@ -1,6 +1,6 @@
 # lukasnehrke.dev
 
-My personal website for personal things, built with [NextJS](https://nextjs.org/).
+My personal website, built with [NextJS](https://nextjs.org/).
 
 ## License
 
