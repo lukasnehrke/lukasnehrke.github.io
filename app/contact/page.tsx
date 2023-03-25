@@ -3,6 +3,8 @@ import GitHubIcon from "../../components/GitHubIcon";
 import UrbitIcon from "../../components/UrbitIcon";
 import { Metadata } from "next";
 
+export const runtime = "experimental-edge";
+
 export const metadata: Metadata = {
   title: "#contact - lukasnehrke.dev",
 };

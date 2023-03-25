@@ -25,6 +25,8 @@ const projects = [
   },
 ];
 
+export const runtime = "experimental-edge";
+
 export const metadata: Metadata = {
   title: "#projects - lukasnehrke.dev",
 };

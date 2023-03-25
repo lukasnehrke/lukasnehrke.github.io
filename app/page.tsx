@@ -1,5 +1,7 @@
 import { Metadata } from "next";
 
+export const runtime = "experimental-edge";
+
 export const metadata: Metadata = {
   title: "#index - lukasnehrke.dev",
 };
