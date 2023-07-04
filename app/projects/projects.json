@@ -1,0 +1,25 @@
+[
+  {
+    "title": "VulnAware",
+    "slug": "vulnaware",
+    "keywords": ["Spring Boot", "Angular", "Java", "TypeScript", "Angular Material", "SCSS", "Git"]
+  },
+  {
+    "title": "Vulpo",
+    "slug": "vulpo",
+    "keywords": [
+      "Jamstack",
+      "Monorepo",
+      "NextJS",
+      "React",
+      "Tailwind CSS",
+      "Vercel",
+      "TypeScript",
+      "JavaScript",
+      "MDX",
+      "Markdown",
+      "Git",
+      "HTML"
+    ]
+  }
+]
