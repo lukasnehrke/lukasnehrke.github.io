@@ -39,7 +39,7 @@ export default function Projects() {
         {projects.map((project) => (
           <li key={project.name} className="rounded-xl border border-gray-200 p-4">
             <p className="text-base font-semibold text-zinc-800">{project.name}</p>
-            <p className="mt-2 mb-4 text-sm text-zinc-600">{project.description}</p>
+            <p className="mb-4 mt-2 text-sm text-zinc-600">{project.description}</p>
             <ul className="flex flex-wrap">
               {project.keywords.map((keyword) => (
                 <li key={keyword} className="mr-2">
