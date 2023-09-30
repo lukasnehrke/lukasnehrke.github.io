@@ -1,6 +1,7 @@
-import { Inter } from "next/font/google";
 import React from "react";
 import Link from "next/link";
+import { Inter } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 import "../styles/globals.css";
 
 const inter = Inter({
@@ -29,6 +30,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </div>
         </header>
         {children}
+        <Analytics />
       </body>
     </html>
   );
