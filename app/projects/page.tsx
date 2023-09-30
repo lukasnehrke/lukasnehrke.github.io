@@ -1,31 +1,7 @@
-import { Metadata } from "next";
+import type { Metadata } from "next";
+import projects from "./projects.json";
 
-const projects = [
-  {
-    name: "Marble",
-    description: "A simple microblogging service.",
-    keywords: [
-      "State: WIP",
-      "Priority: low",
-      "Go",
-      "Typescript",
-      "gRPC",
-      "Bazel",
-      "NextJS",
-      "MongoDB",
-      "Redis",
-      "Microservices",
-      "Kubernetes",
-    ],
-  },
-  {
-    name: "Lexica",
-    description: "Static site generator (SSG) for E-Learning resources. ",
-    keywords: ["State: planned", "Typescript", "Monorepo", "Jamstack"],
-  },
-];
-
-export const runtime = "experimental-edge";
+export const dynamic = "force-static";
 
 export const metadata: Metadata = {
   title: "#projects - lukasnehrke.dev",
@@ -37,8 +13,8 @@ export default function Projects() {
       <h1 className="mb-4 font-semibold">Featured Projects</h1>
       <ul className="space-y-2" role="list">
         {projects.map((project) => (
-          <li key={project.name} className="rounded-xl border border-gray-200 p-4">
-            <p className="text-base font-semibold text-zinc-800">{project.name}</p>
+          <li key={project.title} className="rounded-xl border border-gray-200 p-4">
+            <p className="text-base font-semibold text-zinc-800">{project.title}</p>
             <p className="mb-4 mt-2 text-sm text-zinc-600">{project.description}</p>
             <ul className="flex flex-wrap">
               {project.keywords.map((keyword) => (

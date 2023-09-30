@@ -1,9 +1,9 @@
 import { GlobeAltIcon, EnvelopeIcon, KeyIcon } from "@heroicons/react/24/outline";
 import GitHubIcon from "../../components/GitHubIcon";
 import UrbitIcon from "../../components/UrbitIcon";
-import { Metadata } from "next";
+import type { Metadata } from "next";
 
-export const runtime = "experimental-edge";
+export const dynamic = "force-static";
 
 export const metadata: Metadata = {
   title: "#contact - lukasnehrke.dev",

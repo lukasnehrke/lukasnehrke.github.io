@@ -2,11 +2,13 @@
   {
     "title": "VulnAware",
     "slug": "vulnaware",
+    "description": "Detect vulnerabilities in your open source dependencies.",
     "keywords": ["Spring Boot", "Angular", "Java", "TypeScript", "Angular Material", "SCSS", "Git"]
   },
   {
     "title": "Vulpo",
     "slug": "vulpo",
+    "description": "Open-Source E-Learning Platform.",
     "keywords": [
       "Jamstack",
       "Monorepo",

@@ -2,9 +2,17 @@ import projects from "../projects.json";
 import { notFound } from "next/navigation";
 import Keyword from "../../../components/Keyword";
 
+export const dynamic = "force-static";
+
 const getProjectFromSlug = async (slug: string) => {
   return projects.find((project) => project.slug === slug);
 };
+
+export async function generateStaticParams() {
+  return projects.map((post) => ({
+    slug: post.slug,
+  }));
+}
 
 export default async function Page({ params }: { params: { slug: string } }) {
   const project = await getProjectFromSlug(params.slug);
