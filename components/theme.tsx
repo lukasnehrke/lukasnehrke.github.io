@@ -1,7 +1,6 @@
 "use client";
 
-import { SunIcon, MoonIcon } from "@heroicons/react/24/outline";
-import { useEffect, useState } from "react";
+import { Moon, Sun } from "lucide-react";
 import IconButton from "./icon-button";
 import { useTheme } from "next-themes";
 
@@ -14,8 +13,8 @@ export default function Theme() {
 
   return (
     <IconButton onClick={toggleTheme}>
-      <MoonIcon className="hidden h-5 w-5 dark:block" />
-      <SunIcon className="h-5 w-5 dark:hidden" />
+      <Moon className="hidden dark:block" size={18} />
+      <Sun className="dark:hidden" size={18} />
     </IconButton>
   );
 }

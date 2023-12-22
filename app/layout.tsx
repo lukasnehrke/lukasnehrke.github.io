@@ -5,9 +5,9 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import Tabs from "../components/tabs";
 import Theme from "../components/theme";
 import "../styles/globals.css";
-import GitHubIcon from "../components/GitHubIcon";
 import IconButton from "../components/icon-button";
 import Providers from "./providers";
+import { Github } from "lucide-react";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -31,7 +31,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <Theme />
                 <a href="https://github.com/lukasnehrke" target="_blank" rel="noopener noreferrer">
                   <IconButton>
-                    <GitHubIcon className="h-5 w-5" />
+                    <Github size={18} />
                   </IconButton>
                 </a>
               </div>
