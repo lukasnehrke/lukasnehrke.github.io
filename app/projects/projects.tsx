@@ -19,7 +19,7 @@ export const projects: Project[] = [
   {
     featured: true,
     title: "SCA Tool Serv",
-    description: "Making it easy to use open source in products right.",
+    description: "On a mission to make open source license compliance easy (and fun).",
     color: "bg-gradient-to-br from-green-400 to-green-500",
     actions: [{ icon: <ExternalLink />, href: "https://scatool.com" }],
     keywords: ["Spring Boot", "React", "Monorepo", "TypeScript", "REST", "Material UI", "GitHub"],
@@ -86,7 +86,7 @@ export const projects: Project[] = [
     title: "Marble",
     featured: false,
     archived: true,
-    description: "Open Source Microblogging Service.",
+    description: "An Open Source Microblogging Service.",
     keywords: [
       "Monorepo",
       "Microservices",

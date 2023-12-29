@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { projects } from "./projects";
 import { ProjectCard } from "./card";
+import { Archive, Sparkles } from "lucide-react";
 
 export const dynamic = "force-static";
 
@@ -14,7 +15,11 @@ export default function Projects() {
 
   return (
     <main className="mx-auto px-4 pt-6 md:max-w-4xl md:pt-8">
-      <h1 className="mb-4 font-semibold">Featured Projects</h1>
+      <h1 className="mb-4 flex items-center space-x-1.5">
+        <Sparkles size={18} />
+        <span className="font-medium">Featured Projects</span>
+      </h1>
+
       <ol className="space-y-2" role="list">
         {featured.map((project) => (
           <li key={project.title}>
@@ -23,7 +28,11 @@ export default function Projects() {
         ))}
       </ol>
 
-      <h1 className="mb-4 mt-8 font-semibold">Other Projects</h1>
+      <h1 className="mb-4 mt-8 flex items-center space-x-1.5">
+        <Archive size={18} />
+        <span className="font-medium">Archived Projects</span>
+      </h1>
+
       <ol className="space-y-2" role="list">
         {other.map((project) => (
           <li key={project.title}>
