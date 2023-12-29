@@ -41,7 +41,7 @@ export default function Projects() {
         ))}
       </ol>
 
-      <div className="mt-8 flex items-center justify-center">
+      <div className="mt-2 flex items-center justify-center p-6">
         <a href="https://github.com/lukasnehrke" className="text-sm text-indigo-500" rel="noopener noreferrer">
           View more contributions on GitHub »
         </a>
