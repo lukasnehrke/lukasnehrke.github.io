@@ -1,8 +1,8 @@
 "use client";
 
 import { Moon, Sun } from "lucide-react";
-import IconButton from "./icon-button";
 import { useTheme } from "next-themes";
+import { Button } from "@/components/ui/button";
 
 export default function Theme() {
   const { theme, setTheme } = useTheme();
@@ -12,9 +12,9 @@ export default function Theme() {
   };
 
   return (
-    <IconButton onClick={toggleTheme}>
+    <Button variant="ghost" size="icon" onClick={toggleTheme}>
       <Moon className="hidden dark:block" size={18} />
       <Sun className="dark:hidden" size={18} />
-    </IconButton>
+    </Button>
   );
 }
