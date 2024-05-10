@@ -8,21 +8,21 @@ import "./globals.css";
 import IconButton from "../components/icon-button";
 import Providers from "./providers";
 import { Github } from "lucide-react";
+import { cn } from "../lib/utils";
 
 const inter = Inter({
   subsets: ["latin"],
-  variable: "--font-inter",
+  variable: "--font-sans",
   display: "swap",
 });
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={inter.className} suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/app/favicon.ico" />
       </head>
-      <body className="dark:bg-slate-900 dark:text-white">
+      <body className={cn("min-h-screen bg-background font-sans antialiased", inter.variable)}>
         <Providers>
           <header className="mx-auto max-w-4xl border-b px-4 pt-2 md:border-none md:pt-6">
             <div className="flex w-full flex-wrap items-center justify-between pb-2 md:border-b">
