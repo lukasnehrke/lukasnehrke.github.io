@@ -1,5 +1,4 @@
-import { ExternalLink } from "lucide-react";
-import type { ReactElement } from "react";
+import { ExternalLink, LucideIcon } from "lucide-react";
 
 export interface Project {
   title: string;
@@ -10,7 +9,7 @@ export interface Project {
   color?: string;
   keywords?: string[];
   actions?: {
-    icon: ReactElement;
+    icon: LucideIcon;
     href: string;
   }[];
 }
@@ -18,52 +17,28 @@ export interface Project {
 export const projects: Project[] = [
   {
     featured: true,
-    title: "SCA Tool Serv",
-    description: "On a mission to make open source license compliance easy (and fun).",
+    title: "SCA Tool",
+    description: "Making open source safe, easy, and fun to use.",
     color: "bg-gradient-to-br from-green-400 to-green-500",
-    actions: [{ icon: <ExternalLink />, href: "https://scatool.com" }],
-    keywords: ["Spring Boot", "React", "Monorepo", "TypeScript", "REST", "Material UI", "GitHub"],
+    actions: [{ icon: ExternalLink, href: "https://scatool.com" }],
+    keywords: [],
   },
   {
     featured: true,
     title: "QDAcity",
     description: "Web application for qualitative data analysis (QDA).",
     color: "bg-gradient-to-br from-cyan-500 to-blue-500",
-    actions: [{ icon: <ExternalLink />, href: "https://qdacity.com/" }],
-    keywords: [
-      "Cloud Endpoints Framework",
-      "React",
-      "Yjs",
-      "Java",
-      "JavaScript",
-      "Google Cloud",
-      "App Engine",
-      "styled-components",
-      "GitLab",
-    ],
+    actions: [{ icon: ExternalLink, href: "https://qdacity.com/" }],
+    keywords: [],
   },
   {
     title: "Vulpo",
     featured: true,
     archived: false,
-    description: "Open Source E-Learning Platform.",
+    description: "An elegant CMS for e-learning content.",
     color: "bg-gradient-to-br from-blue-500 to-blue-600",
-    keywords: [
-      "Jamstack",
-      "Monorepo",
-      "NextJS",
-      "React",
-      "Tailwind CSS",
-      "Vercel",
-      "TypeScript",
-      "Turborepo",
-      "tRPC",
-      "Node.js",
-      "Playwright",
-      "MDX",
-      "Markdown",
-      "GitHub",
-    ],
+    actions: [{ icon: ExternalLink, href: "https://vulpo.org/" }],
+    keywords: [],
   },
   {
     title: "VulnAware",
@@ -101,4 +76,4 @@ export const projects: Project[] = [
       "GitHub",
     ],
   },
-];
+] as const;

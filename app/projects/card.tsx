@@ -1,12 +1,11 @@
 import clsx from "clsx";
 import { Project } from "./projects";
-import { cloneElement } from "react";
 
 export interface ProjectCardProps {
   project: Project;
 }
 
-export function ProjectCard({ project }: ProjectCardProps) {
+export function ProjectCard({ project }: ProjectCardProps): JSX.Element {
   return (
     <div className="relative flex overflow-hidden rounded-md border border-gray-200 dark:border-gray-700">
       <div className={clsx("absolute h-full w-2", project.color ?? "bg-gray-200")} />
@@ -16,7 +15,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
           <div className="text-zinc-800 dark:text-zinc-400">
             {project.actions?.map((action) => (
               <a key={action.href} href={action.href} target="_blank" rel="noopener">
-                {cloneElement(action.icon, { size: 18 })}
+                <action.icon size={18} />
               </a>
             ))}
           </div>

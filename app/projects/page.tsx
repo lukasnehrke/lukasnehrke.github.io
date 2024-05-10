@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: "#projects - lukasnehrke.dev",
 };
 
-export default function Projects() {
+export default function ProjectsPage(): JSX.Element {
   const featured = projects.filter((project) => project.featured);
   const other = projects.filter((project) => !project.featured);
 
