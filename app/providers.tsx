@@ -1,8 +1,12 @@
 "use client";
 
-import { PropsWithChildren } from "react";
+import type { ReactNode } from "react";
 import { ThemeProvider } from "next-themes";
 
-export default function Providers({ children }: PropsWithChildren<{}>) {
-  return <ThemeProvider attribute="class">{children}</ThemeProvider>;
+export function Providers({ children }: { children: ReactNode }): JSX.Element {
+  return (
+    <ThemeProvider enableSystem attribute="class" defaultTheme="light" disableTransitionOnChange>
+      {children}
+    </ThemeProvider>
+  );
 }
