@@ -4,7 +4,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import Tabs from "../components/tabs";
 import Theme from "../components/theme";
-import "../styles/globals.css";
+import "./globals.css";
 import IconButton from "../components/icon-button";
 import Providers from "./providers";
 import { Github } from "lucide-react";
@@ -20,7 +20,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={inter.className} suppressHydrationWarning>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/app/favicon.ico" />
       </head>
       <body className="dark:bg-slate-900 dark:text-white">
         <Providers>
