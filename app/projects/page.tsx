@@ -6,7 +6,7 @@ import { Archive, Sparkles } from "lucide-react";
 export const dynamic = "force-static";
 
 export const metadata: Metadata = {
-  title: "#projects - lukasnehrke.dev",
+  title: "#projects",
 };
 
 export default function ProjectsPage() {
@@ -30,7 +30,7 @@ export default function ProjectsPage() {
 
       <h1 className="mt-8 mb-4 flex items-center space-x-1.5">
         <Archive size={18} />
-        <span className="font-medium">Archived Projects</span>
+        <span className="font-medium">Other Projects</span>
       </h1>
 
       <ol className="space-y-2" role="list">

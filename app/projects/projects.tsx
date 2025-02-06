@@ -24,7 +24,7 @@ export const projects: Project[] = [
     keywords: [],
   },
   {
-    featured: true,
+    featured: false,
     title: "QDAcity",
     description: "Web application for qualitative data analysis (QDA).",
     color: "bg-linear-to-br from-cyan-500 to-blue-500",
@@ -32,12 +32,12 @@ export const projects: Project[] = [
     keywords: [],
   },
   {
-    title: "Vulpo",
+    title: "SubTopik",
     featured: true,
     archived: false,
-    description: "An elegant CMS for e-learning content.",
-    color: "bg-linear-to-br from-blue-500 to-blue-600",
-    actions: [{ icon: ExternalLink, href: "https://vulpo.org/" }],
+    description: "An elegant CMS for your e-learning content.",
+    color: "bg-black dark:bg-white",
+    actions: [{ icon: ExternalLink, href: "https://subtopik.com/" }],
     keywords: [],
   },
   {
