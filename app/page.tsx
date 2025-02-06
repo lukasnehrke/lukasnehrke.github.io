@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const dynamic = "force-static";
 
 export const metadata: Metadata = {
-  title: "#home - lukasnehrke.dev",
+  title: "#home - lukasnehrke.com",
 };
 
 export default function Home() {

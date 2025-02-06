@@ -6,6 +6,7 @@ import "./globals.css";
 import { Providers } from "./providers";
 import { cn } from "@/lib/utils";
 import { Header } from "@/app/header";
+import type { Metadata } from "next";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -13,13 +14,20 @@ const inter = Inter({
   display: "swap",
 });
 
+export const metadata: Metadata = {
+  title: {
+    default: "lukasnehrke.com",
+    template: "%s - lukasnehrke.com",
+  },
+};
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
-      <body className={cn("min-h-screen bg-background font-sans antialiased", inter.variable)}>
+      <body className={cn("bg-background min-h-screen font-sans antialiased", inter.variable)}>
         <Providers>
           <Header />
           {children}

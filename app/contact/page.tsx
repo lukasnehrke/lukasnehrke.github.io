@@ -6,7 +6,7 @@ import { Action } from "./action";
 export const dynamic = "force-static";
 
 export const metadata: Metadata = {
-  title: "#contact - lukasnehrke.dev",
+  title: "#contact",
 };
 
 export default function ContactPage() {
@@ -14,7 +14,7 @@ export default function ContactPage() {
     <main className="mx-auto flex px-4 pt-6 md:max-w-4xl md:pt-8">
       <ul className="relative columns-1 gap-8 space-y-2.5 text-sm">
         <li>
-          <Action icon={<Compass size={20} />} href="https://lukasnehrke.dev" text="lukasnehrke.dev" />
+          <Action icon={<Compass size={20} />} href="https://lukasnehrke.com" text="lukasnehrke.com" />
         </li>
         <li>
           <Action
