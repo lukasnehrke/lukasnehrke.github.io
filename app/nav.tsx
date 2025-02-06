@@ -11,7 +11,7 @@ const tabs = [
   { name: "#contact", href: "/contact", segment: "contact" },
 ] as const;
 
-export function Nav(): JSX.Element {
+export function Nav() {
   const segment = useSelectedLayoutSegment();
   return (
     <nav className="flex items-center justify-center space-x-2">

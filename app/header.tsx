@@ -5,7 +5,7 @@ import { Nav } from "@/app/nav";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 
-export function Header(): JSX.Element {
+export function Header() {
   return (
     <header className="mx-auto max-w-4xl border-b px-4 pt-2 md:border-none md:pt-6">
       <div className="flex w-full flex-wrap items-center justify-between pb-2 md:border-b">

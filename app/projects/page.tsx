@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: "#projects - lukasnehrke.dev",
 };
 
-export default function ProjectsPage(): JSX.Element {
+export default function ProjectsPage() {
   const featured = projects.filter((project) => project.featured);
   const other = projects.filter((project) => !project.featured);
 
@@ -28,7 +28,7 @@ export default function ProjectsPage(): JSX.Element {
         ))}
       </ol>
 
-      <h1 className="mb-4 mt-8 flex items-center space-x-1.5">
+      <h1 className="mt-8 mb-4 flex items-center space-x-1.5">
         <Archive size={18} />
         <span className="font-medium">Archived Projects</span>
       </h1>

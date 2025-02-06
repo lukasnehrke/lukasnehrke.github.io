@@ -5,7 +5,7 @@ export interface ProjectCardProps {
   project: Project;
 }
 
-export function ProjectCard({ project }: ProjectCardProps): JSX.Element {
+export function ProjectCard({ project }: ProjectCardProps) {
   return (
     <div className="relative flex overflow-hidden rounded-md border border-gray-200 dark:border-gray-700">
       <div className={clsx("absolute h-full w-2", project.color ?? "bg-gray-200")} />
